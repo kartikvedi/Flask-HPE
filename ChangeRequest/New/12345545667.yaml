@@ -1,0 +1,12 @@
+HORCM Instance Number: 1234
+Username: kartik
+Password: 82111
+Array Serial Number: 1223
+VSM: 123
+Port: 
+Host Group Creation:
+  Host Group Name: dell
+  Host Mode: dff
+  Host Mode Options: dfff
+  HBA wwn: sdfd
+  HBA wwn nickname: asb

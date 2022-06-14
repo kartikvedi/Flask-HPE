@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta charset="utf-8" />
+    <title>Create Change Request</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .toggle-checkbox:checked {
+            @apply: right-0 border-green-400;
+            right: 0;
+            border-color: #68D391;
+        }
+        .toggle-checkbox:checked + .toggle-label {
+            @apply: bg-green-400;
+            background-color: #68D391;
+        }
+        .center{
+      position:absolute;
+      height: X px;
+      width: Y px;
+      left:35%;
+      top:35%;
+      margin-top:- X/2 px;
+      margin-left:- Y/2 px;
+        }
+
+    </style>
+    <script defer src="https://unpkg.com/alpinejs@3.9.1/dist/cdn.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  </head>
+  <body>
+    <header class="p-4 pb-0 border-b shadow-lg bg-gray-100 md:flex md:items-center md:justify-between md:pb-4">
+      <!--logo-->
+      <div class="mb-4 flex items-center justify-between md:mb-0">
+        <h2 class="leading-none text-2xl text-gray-darkest">
+          <a href="@" class="no-underline text-gray-darkest hover:text-black">Create Change Request</a>
+        </h2>
+        <!--bar-->
+        <a href="#" class="text-black md:hidden hover:text-orange">
+          <i class="fa fa-2x fa-bars"></i>
+        </a>
+      </div>
+         <!--nav-->
+      <nav class="align-baseline">
+        <ul class="list-reset md:flex md:items-center">
+          <li class="md:ml-4">
+
+            <span class="bg-green-100 text-green-800 text-xs font-semibold mr-2 px-4.5 py-0.5 rounded dark:bg-green-200 dark:text-green-900">Completed: {{ content["Completed"] }}</span>
+
+          </li>
+          <li class="md:ml-4">
+            <span class="bg-yellow-100 text-yellow-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-yellow-200 dark:text-yellow-900">New: {{ content["New"] }}</span> </li>
+          <li class="md:ml-4">
+            <span class="bg-red-100 text-red-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-red-200 dark:text-red-900">Failed: {{ content["Failed"] }}</span>
+          </li>
+          <div class="center">
+            Ticket Submitted
+          </div>
+           <a href="index.html">Return to Main Page</a>
+  </body>
+</html>

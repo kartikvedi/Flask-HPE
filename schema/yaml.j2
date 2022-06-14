@@ -1,0 +1,14 @@
+HORCM Instance Number: {{ data["HORCM Instance Number"] }}
+Username: {{ data["Username"] }}
+Password: {{ data["Password"] }}
+Array Serial Number: {{ data["Array Serial Number"] }}
+VSM: {{ data["VSM"] }}
+Port: {{ Port }}
+{%- if 'Host Group Creation' in data %}
+Host Group Creation:
+  Host Group Name: {{ data["Host Group Creation"]["Host Group Name"] }}
+  Host Mode: {{ data["Host Group Creation"]["Host Mode"] }}
+  Host Mode Options: {{ data["Host Group Creation"]["Host Mode Options"] }}
+  HBA wwn: {{ data["Host Group Creation"]["HBA wwn"] }}
+  HBA wwn nickname: {{ data["Host Group Creation"]["HBA wwn nickname"] }}
+{% endif %}
